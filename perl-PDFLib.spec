@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	PDFLib
 Summary:	PDFLib Perl module - simpler and more OO interface to pdflib
@@ -8,6 +9,7 @@ Summary(pl):	Modu³ Perla PDFLib - prostszy i bardziej obiektowy interfejs do pdf
 Name:		perl-PDFLib
 Version:	0.12
 Release:	2
+# as perl itself
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/M/MS/MSERGEANT/%{pnam}-%{version}.tar.gz
@@ -43,7 +45,7 @@ by³ tworzony poprawny PDF.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
