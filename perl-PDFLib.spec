@@ -7,13 +7,13 @@ Summary:	PDFLib Perl module - simpler and more OO interface to pdflib
 Summary(pl):	Modu³ Perla PDFLib - prostszy i bardziej obiektowy interfejs do pdflib-a
 Name:		perl-PDFLib
 Version:	0.12
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/M/MS/MSERGEANT/%{pnam}-%{version}.tar.gz
 BuildRequires:	pdflib-perl >= 4.0
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,7 +38,8 @@ by³ tworzony poprawny PDF.
 %setup -q -n %{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -55,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/PDFLib.pm
+%{perl_vendorlib}/PDFLib.pm
 %{_mandir}/man3/*
