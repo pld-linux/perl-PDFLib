@@ -9,7 +9,7 @@ Summary(pl):	Modu³ Perla PDFLib - prostszy i bardziej obiektowy interfejs do pdf
 Name:		perl-PDFLib
 Version:	0.12
 Release:	2
-# as perl itself
+# same as perl
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/M/MS/MSERGEANT/%{pnam}-%{version}.tar.gz
