@@ -11,6 +11,7 @@ Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/M/MS/MSERGEANT/%{pnam}-%{version}.tar.gz
+# Source0-md5:	49ba9d136cc83210d37e7f4763b064cc
 BuildRequires:	pdflib-perl >= 4.0
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
