@@ -12,7 +12,7 @@ Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/authors/id/M/MS/MSERGEANT/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/M/MS/MSERGEANT/%{pnam}-%{version}.tar.gz
 # Source0-md5:	49ba9d136cc83210d37e7f4763b064cc
 BuildRequires:	pdflib-perl >= 4.0
 BuildRequires:	perl-devel >= 1:5.8.0
