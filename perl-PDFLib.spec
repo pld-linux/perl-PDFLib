@@ -10,7 +10,7 @@ Name:		perl-PDFLib
 Version:	0.12
 Release:	2
 # same as perl
-License:	Artistic or GPL
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/M/MS/MSERGEANT/%{pnam}-%{version}.tar.gz
 # Source0-md5:	49ba9d136cc83210d37e7f4763b064cc
