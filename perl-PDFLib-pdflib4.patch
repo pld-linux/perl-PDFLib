@@ -1,0 +1,17 @@
+--- PDFLib-0.14/PDFLib.pm.orig	2005-10-24 20:27:55.000000000 +0200
++++ PDFLib-0.14/PDFLib.pm	2006-10-27 22:56:31.687204750 +0200
+@@ -853,6 +853,14 @@
+     
+     my $dpi = $params{dpi} || $DPI;
+ 
++    eval "use pdflib_pl 5.0";
++    if($@) {
++        PDF_place_image($pdf->_pdf, $params{img}->img,
++                $params{x}, 
++                $params{y}, 
++                $params{scale} || 1.0);
++        return;
++    }
+     if ($params{w}) {
+         PDF_fit_image($pdf->_pdf, $params{img}->img,
+                       $params{x}, 
