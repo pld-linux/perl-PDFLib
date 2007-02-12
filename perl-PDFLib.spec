@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	PDFLib
 Summary:	PDFLib Perl module - simpler and more OO interface to pdflib
-Summary(pl):	Modu³ Perla PDFLib - prostszy i bardziej obiektowy interfejs do pdflib-a
+Summary(pl.UTF-8):   ModuÅ‚ Perla PDFLib - prostszy i bardziej obiektowy interfejs do pdflib-a
 Name:		perl-PDFLib
 Version:	0.14
 Release:	1
@@ -31,14 +31,14 @@ getting/setting all parameters. It has builting support for several
 paper sizes. It also takes care of starting/ending new pages, to try
 and make sure that a valid PDF file is always created.
 
-%description -l pl
+%description -l pl.UTF-8
 PDFLib to prostszy, bardziej obiektowo zorientowany interfejs do
-pdflib-a, dostêpnego na http://www.pdflib.com/. Modu³ ten czyni
-tworzenie PDF-ów z Perla szybkim, ³atwnym i bezpiecznym. Aktualnie
-obs³uguje tekst, obrazki, grafikê i odczytywanie/ustawianie wszystkich
-parametrów. Ma wbudowan± obs³ugê kilku rozmiarów papieru. Modu³ dba
-o rozpoczynanie/koñczenie stron, próbuje te¿ zapewniæ, aby zawsze
-by³ tworzony poprawny PDF.
+pdflib-a, dostÄ™pnego na http://www.pdflib.com/. ModuÅ‚ ten czyni
+tworzenie PDF-Ã³w z Perla szybkim, Å‚atwnym i bezpiecznym. Aktualnie
+obsÅ‚uguje tekst, obrazki, grafikÄ™ i odczytywanie/ustawianie wszystkich
+parametrÃ³w. Ma wbudowanÄ… obsÅ‚ugÄ™ kilku rozmiarÃ³w papieru. ModuÅ‚ dba
+o rozpoczynanie/koÅ„czenie stron, prÃ³buje teÅ¼ zapewniÄ‡, aby zawsze
+byÅ‚ tworzony poprawny PDF.
 
 %prep
 %setup -q -n %{pnam}-%{version}
