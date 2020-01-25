@@ -3,7 +3,6 @@
 %bcond_without	tests	# do not perform "make test"
 
 %define		pnam	PDFLib
-%include	/usr/lib/rpm/macros.perl
 Summary:	PDFLib Perl module - simpler and more OO interface to pdflib
 Summary(pl.UTF-8):	Moduł Perla PDFLib - prostszy i bardziej obiektowy interfejs do pdflib-a
 Name:		perl-PDFLib
