@@ -7,7 +7,7 @@ Summary:	PDFLib Perl module - simpler and more OO interface to pdflib
 Summary(pl.UTF-8):	Moduł Perla PDFLib - prostszy i bardziej obiektowy interfejs do pdflib-a
 Name:		perl-PDFLib
 Version:	0.14
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
